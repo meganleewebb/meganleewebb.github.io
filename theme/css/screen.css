@@ -234,14 +234,19 @@ form.inline_edit {
     text-align: right;
 }
 
+
 nav ul {
-    
     list-style: none;
     padding: 10px 0 10px 0;
     
 }
 nav li {
     
+}
+nav li.selected a {
+    background-color: #15A9DB;
+    color: #FFF;
+    display: inline;
 }
 nav a {
     display: block;
@@ -250,14 +255,12 @@ nav a {
 nav a:hover {
     background-color: #d3d3d3;
     color: #FFF;
-}
-nav li.selected a {
-    background-color: #15A9DB;
-    color: #FFF;
+    display: inline;
 }
 
+
 header .header_box {
-    padding-top: 4.5em;
+    padding-top: 0.5em;
 }
 header h1 {
     font-size: 1.5em;
