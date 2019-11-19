@@ -39,6 +39,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    background: #333333;
 }
 ol, ul {
     list-style: none;
@@ -60,20 +61,22 @@ body {
     font-family: Georgia, serif;
     font-size: 16px;
     line-height: 1.5em;
-    color: #444;
+    
+    /* grey text */
+    color: #cccccc;
 }
 
 header, #wrapper {
     padding: 0 10px;
     min-width: 300px;
     max-width: 910px;
-
 }
 
 a {
     text-decoration: none;
-    color: #15A9DB;
+    color: #64dd00;
 }
+
 
 ul {
     list-style: outside disc;
@@ -104,7 +107,7 @@ blockquote {
 }
 
 .date {
-    color: #CCC;
+    
     white-space: nowrap;
     clear: both;
     width: 130px;
@@ -257,7 +260,10 @@ nav a:hover {
     color: #FFF;
     display: inline;
 }
-
+nav li.selected a {
+    background-color: #15A9DB;
+    color: #FFF;
+}
 
 header .header_box {
     padding-top: 0.5em;
@@ -270,7 +276,7 @@ header h1 {
 header h2 {
     font-size: 1em;
     margin: .3em 0;
-    color: #DDD;
+    
 }
 
 #content {
@@ -281,8 +287,6 @@ header h2 {
     font-family: sans-serif;
     line-height: 2.5em;
     margin: 4.5em 0 3em;
-    background-color: #F9F9F9;
-    color: #444;
     border-radius: 5px;
 }
 .pages a.next_page {
@@ -291,7 +295,7 @@ header h2 {
     text-align: center;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: #EEE;
+     
 }
 .pages a.prev_page {
     float: left;
@@ -299,10 +303,9 @@ header h2 {
     text-align: center;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    background-color: #EEE;
+     
 }
 .pages a {
-    color: inherit;
     border: none;
 }
 .pages a:hover {
@@ -310,7 +313,6 @@ header h2 {
 }
 .pages span {
     display: block;
-    
     text-align: center;
 }
 
@@ -336,7 +338,7 @@ footer {
     font-family: sans-serif;
     line-height: 2.5em;
     text-align: center;
-    color: #BBB;
+     
     margin: 3em 0;
     border: 1px solid #EEE;
     border-radius: 5px;
